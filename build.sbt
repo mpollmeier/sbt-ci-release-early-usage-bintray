@@ -1,5 +1,6 @@
 name := "sbt-ci-release-early-usage-bintray"
 organization := "com.michaelpollmeier"
+enablePlugins(GitVersioning)
 
 scalaVersion := "2.13.0"
 crossScalaVersions := Seq(scalaVersion.value, "2.12.10", "2.11.12")
