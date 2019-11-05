@@ -1,4 +1,4 @@
-name := "sbt-ci-release-early-usage-bintray"
+name := "sbt-ci-release-early-usage-bintray2"
 organization := "com.michaelpollmeier"
 enablePlugins(GitVersioning)
 
