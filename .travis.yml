@@ -1,6 +1,6 @@
 language: scala
 dist: bionic
-jdk: openjdk10
+jdk: openjdk11
 if: tag IS blank
 
 before_install:
@@ -15,7 +15,7 @@ jobs:
   - stage: test
     script: sbt +test
   - stage: release
-    script: sbt ci-release-bintray
+    script: sbt ciReleaseTagNextVersion ciReleaseBintray
 before_cache:
 - find $HOME/.sbt -name "*.lock" -type f -delete
 - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f -delete
